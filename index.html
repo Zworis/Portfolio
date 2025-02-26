@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Boris</title>
+  <link rel="icon" type="image/x-icon" href="Website_Icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="content">
+  <div class="Header">
+    <img src="Website_Icon.png" alt="Logo" class="logo">
+    <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" id="menuCheckbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <!--
+      We can use a label here to close upon click (when doing same page navigation), this
+      does require a slight bit of JS.
+      -->
+      <li>
+        <a href="#">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+        </a>
+      </li>
+
+      <!-- These just close the menu -->
+      <li><label for="menuCheckbox"><a>Info</a></label></li>
+      <li><label for="menuCheckbox"><a>Contact</a></label></li>
+
+      <!-- Or just use regular URLs -->
+      <li>
+        <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div class="Intro">
+    <div class="intro_text">
+      <h1>Portfolio website</h1>
+      <h3>Boris Zwietink</h3>
+      <img src="output-onlinegiftools.gif" loading="eager"alt="submarine">
+    </div>
+
+  </div>
+
+  <div class="About_me">
+    <img src="DottedLine.png" class="line">
+    <h1 class="about_padding">About Me</h1>
+    <div class="informationAbout">
+      <img src="ImageSelf.jpeg" class="Selfie">
+      <p class="about">Hi, I'm Boris and 17 years old. I was born and raised in the Netherlands and went to Metis Montessori Lyceum, where I've build up a bunch of experience which you are able to see here. Besides my educational life I love to explore hobbies, activities and the world. If you're not busy living, you're busy dying.</p>
+    </div>
+
+  </div>
+
+  <div class="skills">
+    <img src="DottedLine.png" class="line">
+  </div>
+
+  <div class="Projects">
+    <img src="DottedLine.png" class="line">
+  </div>
+
+  <div class="Contact_me">
+    <img src="DottedLine.png" class="line">
+  </div>
+  </div>
+</body>
+</html>
