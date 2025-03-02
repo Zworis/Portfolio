@@ -179,23 +179,35 @@ h3,h1{
 text-align: center;
 font-family: Corinthia;
 font-size: 10vh;
-color: #6ebfc2;
+color: #f4f4f4;
 }
 h3{
   font-size: 7.5vh;
 }
 
 
-.About_me{
+.About_me {
+  display: flex;        /* This makes it a flex container */
+  flex-direction: column; /* This stacks everything vertically */
+  justify-content: center; /* Vertically center everything */
   height: 100vh;
-  width: 100%;
+  align-items: center; /* Horizontally center everything */
+  text-align: center; /* Align text in the center */
+  gap: 3vh; /* Adds space between elements (optional, but makes it look clean) */
   background: linear-gradient(to bottom, #0059b3, #004080);
-  margin: 0;
 }
+
 .informationAbout{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0073e6;
+  border-radius: 5%;
+  text-align: center; /* Horizontal Center */
+  gap: 2rem; /* Space between image and text */
+  box-shadow: 6px 6px 0px #0047ab; /* Classic shadow */
+  border: 2px solid #0047ab; /* Optional for that chunky retro vibe */
+  border-radius: 5vh 5vh 5vh 5vh;
 }
 .skills{
   height: 100vh;
@@ -256,6 +268,13 @@ h3{
   vertical-align: center;
   width: 40vh;
   font-size: 3vh;
+  color: #f4f4f4;
   margin: 2vh;
   margin-top: 5vh;
+}
+
+.line{
+  width: 100%;
+  height: 7.5vh;
+  align-self: center;
 }
