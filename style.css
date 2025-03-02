@@ -3,7 +3,9 @@
   font-family: "Corinthia";
   src: url("Corinthia-Regular.ttf")
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
