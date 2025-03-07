@@ -214,7 +214,7 @@ h3{
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(to bottom, #004080, #003366);
   margin: 0;
@@ -282,7 +282,7 @@ h3{
   display: flex;
   justify-content: center; /* Ensures spacing between skill sections */
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
   max-width: 1200px;
   gap: 10vh;
 }
@@ -319,11 +319,46 @@ h3{
   border-radius: 10px; /* Optional */
   vertical-align: center;
   align-items: center;
+  position: relative;
 }
 .block img{
   height: 9vh;
+  max-width: 9vh;
   margin: auto;
 }
+
 .empty{
   opacity: 0;
+}
+.tooltip-text {
+  visibility: hidden;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 120%; /* Tooltip above the block */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 99999; /* Make sure it's above other elements */
+}
+.block:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+@media (aspect-ratio < 1/1) {
+  .skillTree {
+    flex-direction: column; /* When wider than tall → Row wise */
+  }
+  .skills{
+    align-items: center;
+  }
+  .about,.Selfie{
+    height: 40vw;
+    width: 40vw;
+    font-size: 3vw;
+  }
 }
