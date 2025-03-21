@@ -1,5 +1,6 @@
 window.addEventListener("scroll", function() {
     const navbar = document.querySelector(".Header");
+    const menu = document.getElementById("menu");
     const scrollTop = window.scrollY;
     const docHeight = document.body.scrollHeight - window.innerHeight;
     const scrollFraction = scrollTop / docHeight; // Normalized scroll value (0 to 1)
@@ -14,4 +15,5 @@ window.addEventListener("scroll", function() {
     );
 
     navbar.style.backgroundColor = `rgb(${newColor.join(",")})`;
+    menu.style.backgroundColor = `rgb(${newColor.join(",")})`;
 });

@@ -46,14 +46,20 @@
           <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
         </a>
       </li>
-
-      <!-- These just close the menu -->
-      <li><label for="menuCheckbox"><a>Info</a></label></li>
-      <li><label for="menuCheckbox"><a>Contact</a></label></li>
-
-      <!-- Or just use regular URLs -->
-      <li>
-        <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+			<li>
+				<a href="#Skills">
+					<label for="menuCheckbox" onclick="this.parentNode.click();">Skills</label>
+				</a>
+			</li>
+			<li>
+				<a href="#Projects">
+					<label for="menuCheckbox" onclick="this.parentNode.click();">Projects</label>
+				</a>
+			</li>
+			<li>
+        <a href="#Contact">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Contact</label>
+        </a>
       </li>
     </ul>
   </div>
@@ -82,7 +88,7 @@
 
 
 
-  <div class="skills">
+  <div class="skills" id="Skills">
     <img src="images/DottedLine.png" class="line">
 		<h1 class="about_padding">Skills</h1>
 		<div class="skillTree">
@@ -194,7 +200,7 @@
 		</div>
   </div>
 
-  <div class="Projects">
+  <div class="Projects" id="Projects">
     <img src="images/DottedLine.png" class="line">
 
 		<h1>Projects</h1>
@@ -217,7 +223,7 @@
 
   </div>
 
-  <div class="Contact_me">
+  <div class="Contact_me" id="Contact">
     <img src="images/DottedLine.png" class="line">
 
 		<h1 id="contactTitle">Contact me</h1>
